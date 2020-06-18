@@ -38,8 +38,7 @@ public class BasicBarChart: UIView {
         }
     }
     
-    private var maxLeftTextWidth: CGFloat = 0
-    private var maxLeftTextBarX: CGFloat = 0
+    private var maxLeftTextBarX: CGFloat = CGFloat(Float.greatestFiniteMagnitude)
     private var minBarY: CGFloat = CGFloat(Float.greatestFiniteMagnitude)
     private var maxBarY: CGFloat = CGFloat(Float.leastNormalMagnitude)
     private let leftAxisWidth: CGFloat = 1.0
@@ -90,10 +89,8 @@ public class BasicBarChart: UIView {
 //        // Show a title below the bar
         mainLayer.addTextLayer(frame: entry.bottomTitleFrame, color: cgColor, font: entry.data.titleValueFont, text: entry.data.title, animated: animated, oldFrame: oldEntry?.bottomTitleFrame)
        
-        if entry.bottomTitleFrame.maxX > maxLeftTextWidth {
-            maxLeftTextWidth = entry.bottomTitleFrame.maxX
-            maxLeftTextBarX = entry.barFrame.origin.x
-        }
+        
+        maxLeftTextBarX = entry.barFrame.origin.x
         
         if entry.barFrame.origin.y < minBarY {
             minBarY = entry.barFrame.origin.y
