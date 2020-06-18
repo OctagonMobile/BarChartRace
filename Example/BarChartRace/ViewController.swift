@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             let height: Float = Float(value) / 100.0
             
             let formatter = DateFormatter()
-            formatter.dateFormat = "d MMM"
+            formatter.dateFormat = "d MMM yyyy"
             var date = Date()
             date.addTimeInterval(TimeInterval(24*60*60*i))
             result.append(DataEntry(color: colors[i % colors.count], height: height, textValue: "\(value)", title: formatter.string(from: date)))
