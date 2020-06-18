@@ -51,7 +51,7 @@ extension CALayer {
         textLayer.backgroundColor = UIColor.clear.cgColor
         textLayer.alignmentMode = CATextLayerAlignmentMode.center
         textLayer.contentsScale = UIScreen.main.scale
-        textLayer.font = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
+        textLayer.font = CTFontCreateUIFontForLanguage(.label, font.pointSize, nil)
         textLayer.fontSize = font.pointSize
         textLayer.string = text
         textLayer.truncationMode = .end
