@@ -26,6 +26,7 @@ class BasicBarChartPresenter {
     
     let minBarHeight: CGFloat = 20
     let maxBarTitleWidthPercent: CGFloat = 22
+    let maxBarValueWidthPercent: CGFloat = 22
     
     init(barWidth: CGFloat = 40, space: CGFloat = 20) {
         self.barWidth = barWidth
@@ -41,13 +42,21 @@ class BasicBarChartPresenter {
         
         let sortedDataEntries = dataEntries.sorted(by: { $0.height >= $1.height})
         let computedBarHeight =  viewHeight * 2 / CGFloat((3 * dataEntries.count) + 1) //Height * 2 / (3Count + 1)
-        var computedTitleWidth = computeTitleWidth(forHeight: computedBarHeight)
+        
         let maxTitleWidth = viewWidth * maxBarTitleWidthPercent / 100
+        var computedTitleWidth = computeTitleWidth(forHeight: computedBarHeight)
         if computedTitleWidth > maxTitleWidth {
             computedTitleWidth = maxTitleWidth
         }
+        
+        let maxValueWidth = viewWidth * maxBarValueWidthPercent / 100
+        var computedValueWidth = computeBarValueWidth(forHeight: computedBarHeight)
+        if computedValueWidth > maxValueWidth {
+            computedValueWidth = maxValueWidth
+        }
+        
         let titlePadding: CGFloat = 10 /*Left and Right Title Padding*/
-        let totalBarWidth = (viewWidth - computedTitleWidth - titlePadding - topSpace)
+        let totalBarWidth = (viewWidth - computedTitleWidth - titlePadding - computedValueWidth)
       
         for (index, entry) in dataEntries.enumerated() {
             let entryHeight = CGFloat(entry.height) * totalBarWidth
@@ -58,7 +67,7 @@ class BasicBarChartPresenter {
             
             let origin = CGPoint(x: xPosition, y: yPosition)
             
-            let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry, titleWidth: computedTitleWidth)
+            let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry, titleWidth: computedTitleWidth, valueWidth: computedValueWidth)
             
             result.append(barEntry)
         }
@@ -71,6 +80,18 @@ class BasicBarChartPresenter {
         
         for entry in dataEntries {
             let width = entry.title.width(withConstrainedHeight: height, font: entry.titleValueFont)
+            if width > maxWidth {
+                maxWidth = width
+            }
+        }
+        return maxWidth
+    }
+    
+    func computeBarValueWidth(forHeight height: CGFloat) -> CGFloat {
+        var maxWidth: CGFloat = 0.0
+        
+        for entry in dataEntries {
+            let width = entry.textValue.width(withConstrainedHeight: height, font: entry.textValueFont)
             if width > maxWidth {
                 maxWidth = width
             }
