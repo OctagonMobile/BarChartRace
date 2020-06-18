@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BarChartRace'
   s.version          = '0.1.0'
-  s.summary          = 'BarChartRace library used to generate race of bar chart bars'
+  s.summary          = 'BarChartRace Animation'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+BarChartRace library used to generate race of bar chart bars.
                        DESC
 
   s.homepage         = 'https://github.com/OctagonMobile/BarChartRace'
