@@ -1,0 +1,16 @@
+PODS:
+  - BarChartRace (0.1.0)
+
+DEPENDENCIES:
+  - BarChartRace (from `../`)
+
+EXTERNAL SOURCES:
+  BarChartRace:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BarChartRace: bface21a1868e2faf045fff629f3f2dedf83c663
+
+PODFILE CHECKSUM: beca3fb097c8e76840e170d0b313e777e2a43937
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		056ED6AA5D9265544D31285AC970749C /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */; };
+		2E51C835A3861ACCC2AE3A8147084371 /* Pods-BarChartRace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A5CE4D763D6FA1E948C790DEDF944E /* Pods-BarChartRace_Example-dummy.m */; };
+		34F9A86BB893068FE21F369E0093BB3E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */; };
+		3A60E75D7E8C52749312170F2BA14599 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */; };
+		51633CE70E0A1A125FEFFA0A7617FCD2 /* BarChartRace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53B394BE71A8D42F4CBECF6E4CE86919 /* Pods-BarChartRace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2543490ABDF8A7BA7174D80AA5C4C1 /* Pods-BarChartRace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABA8F6B51F2BB6E49506D9F4BDFCCC5 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */; };
+		78056248EE9E34243183E6D9AE4839D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		94C9D504E3DB981CF2556F3C6CBA83DC /* Pods-BarChartRace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B4395663EA7708D10B9C666C77CA97 /* Pods-BarChartRace_Tests-dummy.m */; };
+		98898BCBD14AC9C04838B639D4FDFBD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B0AD92D1A471FB771F8BE57950096694 /* BarChartRace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */; };
+		C2F2270C2447C824F57E52840FCDFB03 /* Pods-BarChartRace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC87DFDCCF7697F4CD213CF1C960E93 /* Pods-BarChartRace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4BAC44D45F643458835EBE1740BA21A /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */; };
+		DE4434496BECEF55D9E60DD5426DD174 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */; };
+		E5990B8107842276FA432572302A7224 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */; };
+		EA3EE99909843DDDDE5248F9B7D77165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		ED5903423860558FC270E105769EF59F /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A254815CD586E99E56871CC21D88C13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D8DDB85317454620ED3228B632850E5;
+			remoteInfo = "Pods-BarChartRace_Example";
+		};
+		60BF6B6787F157A7389F3B5DA7799440 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C20F9E3414BD753C6AE2B88AE05D1BF8;
+			remoteInfo = BarChartRace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B348FAB1ADB60ED9061FCB3297A9F7 /* Pods-BarChartRace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSegments.swift; path = BarChartRace/Classes/CustomSegments.swift; sourceTree = "<group>"; };
+		1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChart.swift; path = BarChartRace/Classes/BasicBarChart.swift; sourceTree = "<group>"; };
+		2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarChartRace-dummy.m"; sourceTree = "<group>"; };
+		2C9C9CE03614104BCBD1EB56F50F8A4B /* Pods-BarChartRace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarChartRace_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35FABB1CD7BE3ADDE3B94EB326300FBE /* BarChartRace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-prefix.pch"; sourceTree = "<group>"; };
+		38A5CE4D763D6FA1E948C790DEDF944E /* Pods-BarChartRace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarChartRace_Example-dummy.m"; sourceTree = "<group>"; };
+		39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.release.xcconfig; sourceTree = "<group>"; };
+		4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-umbrella.h"; sourceTree = "<group>"; };
+		46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = BarChartRace/Classes/CALayerExtension.swift; sourceTree = "<group>"; };
+		4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataEntry.swift; path = BarChartRace/Classes/DataEntry.swift; sourceTree = "<group>"; };
+		558F9F74E28F73EAF9023343CAB95C78 /* Pods-BarChartRace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5B19D6333667C5C0A6286C4AFA1D4032 /* BarChartRace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarChartRace.modulemap; sourceTree = "<group>"; };
+		63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarEntry.swift; path = BarChartRace/Classes/BasicBarEntry.swift; sourceTree = "<group>"; };
+		692B91F609D7F5FF2967B1094490BEEE /* Pods-BarChartRace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BarChartRace_Example.modulemap"; sourceTree = "<group>"; };
+		6DFEEFA37175ECF9E791BD5011E77343 /* Pods-BarChartRace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BarChartRace_Tests.modulemap"; sourceTree = "<group>"; };
+		7814412A6E1A9D4E60B8A1CC8729AE92 /* Pods-BarChartRace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Example-Info.plist"; sourceTree = "<group>"; };
+		7AC87DFDCCF7697F4CD213CF1C960E93 /* Pods-BarChartRace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarChartRace_Example-umbrella.h"; sourceTree = "<group>"; };
+		7E2543490ABDF8A7BA7174D80AA5C4C1 /* Pods-BarChartRace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarChartRace_Tests-umbrella.h"; sourceTree = "<group>"; };
+		87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPathExtension.swift; path = BarChartRace/Classes/UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		88F4B6FB1CC4275AF2AE4CA270BC98C6 /* Pods_BarChartRace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarChartRace_Example.framework; path = "Pods-BarChartRace_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E71BC6BE751B8A744667388D1181A6 /* Pods-BarChartRace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D6651E00A71EBB26B56B73BD3B269F3 /* Pods_BarChartRace_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BarChartRace_Tests.framework; path = "Pods-BarChartRace_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F20761F92872EC89CBA45C70648739D /* BarChartRace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BarChartRace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1FFF0305016F4518349A4F5A1BA9A2F /* Pods-BarChartRace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = BarChartRace/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
+		A655908D6B0A9D53E18E1A9246926906 /* BarChartRace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarChartRace-Info.plist"; sourceTree = "<group>"; };
+		B644BAABACE7DC708B299A382867CCB8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B8580F32C6DCCF1AB7645FAA2596B601 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BC05A1BD0AEFF3C93011C9DD992BA5F9 /* Pods-BarChartRace_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Tests-Info.plist"; sourceTree = "<group>"; };
+		C4B4395663EA7708D10B9C666C77CA97 /* Pods-BarChartRace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarChartRace_Tests-dummy.m"; sourceTree = "<group>"; };
+		D374ADF6B874117E422E488D1B2271EA /* Pods-BarChartRace_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.debug.xcconfig; sourceTree = "<group>"; };
+		DBF9A6641D2880BAF325BB73AF5C4310 /* Pods-BarChartRace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E16AE9092D79C130151CFA9455EA4E70 /* Pods-BarChartRace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarChartRace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED65BB498C496A07E9A9FB05722C6D2B /* Pods-BarChartRace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarChartRace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EF273B7B14DCE4BEA4F49AC3A5E55813 /* BarChartRace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BarChartRace.framework; path = BarChartRace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChartPresenter.swift; path = BarChartRace/Classes/BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0878809AE90AE4B7AA9BCB3DD44073DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3EE99909843DDDDE5248F9B7D77165 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6069B129DCBA70BC8493E1C5B9E5CAD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98898BCBD14AC9C04838B639D4FDFBD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2907CFB9E0B245F28008ABC0D2CF873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78056248EE9E34243183E6D9AE4839D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F288ABA42BF95D937AD35A0766C3035 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B19D6333667C5C0A6286C4AFA1D4032 /* BarChartRace.modulemap */,
+				2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */,
+				A655908D6B0A9D53E18E1A9246926906 /* BarChartRace-Info.plist */,
+				35FABB1CD7BE3ADDE3B94EB326300FBE /* BarChartRace-prefix.pch */,
+				4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */,
+				D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */,
+				39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BarChartRace";
+			sourceTree = "<group>";
+		};
+		7F3629232E07CF77636FB00C036F3DBE /* Pods-BarChartRace_Example */ = {
+			isa = PBXGroup;
+			children = (
+				692B91F609D7F5FF2967B1094490BEEE /* Pods-BarChartRace_Example.modulemap */,
+				ED65BB498C496A07E9A9FB05722C6D2B /* Pods-BarChartRace_Example-acknowledgements.markdown */,
+				94E71BC6BE751B8A744667388D1181A6 /* Pods-BarChartRace_Example-acknowledgements.plist */,
+				38A5CE4D763D6FA1E948C790DEDF944E /* Pods-BarChartRace_Example-dummy.m */,
+				2C9C9CE03614104BCBD1EB56F50F8A4B /* Pods-BarChartRace_Example-frameworks.sh */,
+				7814412A6E1A9D4E60B8A1CC8729AE92 /* Pods-BarChartRace_Example-Info.plist */,
+				7AC87DFDCCF7697F4CD213CF1C960E93 /* Pods-BarChartRace_Example-umbrella.h */,
+				02B348FAB1ADB60ED9061FCB3297A9F7 /* Pods-BarChartRace_Example.debug.xcconfig */,
+				A1FFF0305016F4518349A4F5A1BA9A2F /* Pods-BarChartRace_Example.release.xcconfig */,
+			);
+			name = "Pods-BarChartRace_Example";
+			path = "Target Support Files/Pods-BarChartRace_Example";
+			sourceTree = "<group>";
+		};
+		9C56249F70F97AC77C596DB28D909632 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9F20761F92872EC89CBA45C70648739D /* BarChartRace.podspec */,
+				B8580F32C6DCCF1AB7645FAA2596B601 /* LICENSE */,
+				B644BAABACE7DC708B299A382867CCB8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A43624976E217D587EC25AC896E27D37 /* Pods-BarChartRace_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFEEFA37175ECF9E791BD5011E77343 /* Pods-BarChartRace_Tests.modulemap */,
+				E16AE9092D79C130151CFA9455EA4E70 /* Pods-BarChartRace_Tests-acknowledgements.markdown */,
+				DBF9A6641D2880BAF325BB73AF5C4310 /* Pods-BarChartRace_Tests-acknowledgements.plist */,
+				C4B4395663EA7708D10B9C666C77CA97 /* Pods-BarChartRace_Tests-dummy.m */,
+				BC05A1BD0AEFF3C93011C9DD992BA5F9 /* Pods-BarChartRace_Tests-Info.plist */,
+				7E2543490ABDF8A7BA7174D80AA5C4C1 /* Pods-BarChartRace_Tests-umbrella.h */,
+				D374ADF6B874117E422E488D1B2271EA /* Pods-BarChartRace_Tests.debug.xcconfig */,
+				558F9F74E28F73EAF9023343CAB95C78 /* Pods-BarChartRace_Tests.release.xcconfig */,
+			);
+			name = "Pods-BarChartRace_Tests";
+			path = "Target Support Files/Pods-BarChartRace_Tests";
+			sourceTree = "<group>";
+		};
+		B4C636D6DC4C2DD64C16710195B54DA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF273B7B14DCE4BEA4F49AC3A5E55813 /* BarChartRace.framework */,
+				88F4B6FB1CC4275AF2AE4CA270BC98C6 /* Pods_BarChartRace_Example.framework */,
+				9D6651E00A71EBB26B56B73BD3B269F3 /* Pods_BarChartRace_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C63586E85A12926E2B3649B4515B3847 /* BarChartRace */ = {
+			isa = PBXGroup;
+			children = (
+				A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */,
+				1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */,
+				FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */,
+				63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */,
+				46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */,
+				02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */,
+				4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */,
+				87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */,
+				9C56249F70F97AC77C596DB28D909632 /* Pod */,
+				7F288ABA42BF95D937AD35A0766C3035 /* Support Files */,
+			);
+			name = BarChartRace;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D20B18F5DC1964D914238A3D0121FC8A /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B4C636D6DC4C2DD64C16710195B54DA0 /* Products */,
+				D766416C9856D4EB95DCC12B1FAD5A19 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D20B18F5DC1964D914238A3D0121FC8A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C63586E85A12926E2B3649B4515B3847 /* BarChartRace */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D766416C9856D4EB95DCC12B1FAD5A19 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F3629232E07CF77636FB00C036F3DBE /* Pods-BarChartRace_Example */,
+				A43624976E217D587EC25AC896E27D37 /* Pods-BarChartRace_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		50F74C9F2FD7A5AE740C19945A896D03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51633CE70E0A1A125FEFFA0A7617FCD2 /* BarChartRace-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DF190DFE5D16E2ACA7588363DD26F5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B394BE71A8D42F4CBECF6E4CE86919 /* Pods-BarChartRace_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9C8854330956CCF644FD795D7F54943 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F2270C2447C824F57E52840FCDFB03 /* Pods-BarChartRace_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4D8DDB85317454620ED3228B632850E5 /* Pods-BarChartRace_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53BF81D51678A17B8BF55F6F4A11B027 /* Build configuration list for PBXNativeTarget "Pods-BarChartRace_Example" */;
+			buildPhases = (
+				C9C8854330956CCF644FD795D7F54943 /* Headers */,
+				819FBB9FD8A62D8567AD9E80A55A13D4 /* Sources */,
+				A2907CFB9E0B245F28008ABC0D2CF873 /* Frameworks */,
+				7C187543251CD3DDE6E26BEF480ED366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17E1804B5FB1D67C6970BE320233DBE8 /* PBXTargetDependency */,
+			);
+			name = "Pods-BarChartRace_Example";
+			productName = "Pods-BarChartRace_Example";
+			productReference = 88F4B6FB1CC4275AF2AE4CA270BC98C6 /* Pods_BarChartRace_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		85D6B9A7B8BB18DC3B9EE259211571F3 /* Pods-BarChartRace_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EAF47D5FC9858E4A9164CE8A1C766B9 /* Build configuration list for PBXNativeTarget "Pods-BarChartRace_Tests" */;
+			buildPhases = (
+				7DF190DFE5D16E2ACA7588363DD26F5B /* Headers */,
+				2E67C998D7EC88E75FB4E39448C59E51 /* Sources */,
+				6069B129DCBA70BC8493E1C5B9E5CAD8 /* Frameworks */,
+				61524083DCFDE1DFD95567F0AB7B2367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307931DFDA43111D73E045E135C9CF57 /* PBXTargetDependency */,
+			);
+			name = "Pods-BarChartRace_Tests";
+			productName = "Pods-BarChartRace_Tests";
+			productReference = 9D6651E00A71EBB26B56B73BD3B269F3 /* Pods_BarChartRace_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C20F9E3414BD753C6AE2B88AE05D1BF8 /* BarChartRace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3411457218A37BA08F261B889294DD8C /* Build configuration list for PBXNativeTarget "BarChartRace" */;
+			buildPhases = (
+				50F74C9F2FD7A5AE740C19945A896D03 /* Headers */,
+				954EE4FBA26B53896B6F92486589619B /* Sources */,
+				0878809AE90AE4B7AA9BCB3DD44073DA /* Frameworks */,
+				0237074DB6362DB15D16EE19CE2A4334 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarChartRace;
+			productName = BarChartRace;
+			productReference = EF273B7B14DCE4BEA4F49AC3A5E55813 /* BarChartRace.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B4C636D6DC4C2DD64C16710195B54DA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C20F9E3414BD753C6AE2B88AE05D1BF8 /* BarChartRace */,
+				4D8DDB85317454620ED3228B632850E5 /* Pods-BarChartRace_Example */,
+				85D6B9A7B8BB18DC3B9EE259211571F3 /* Pods-BarChartRace_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0237074DB6362DB15D16EE19CE2A4334 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61524083DCFDE1DFD95567F0AB7B2367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C187543251CD3DDE6E26BEF480ED366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E67C998D7EC88E75FB4E39448C59E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C9D504E3DB981CF2556F3C6CBA83DC /* Pods-BarChartRace_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		819FBB9FD8A62D8567AD9E80A55A13D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E51C835A3861ACCC2AE3A8147084371 /* Pods-BarChartRace_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954EE4FBA26B53896B6F92486589619B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F9A86BB893068FE21F369E0093BB3E /* ArrayExtension.swift in Sources */,
+				B0AD92D1A471FB771F8BE57950096694 /* BarChartRace-dummy.m in Sources */,
+				056ED6AA5D9265544D31285AC970749C /* BasicBarChart.swift in Sources */,
+				D4BAC44D45F643458835EBE1740BA21A /* BasicBarChartPresenter.swift in Sources */,
+				ED5903423860558FC270E105769EF59F /* BasicBarEntry.swift in Sources */,
+				6ABA8F6B51F2BB6E49506D9F4BDFCCC5 /* CALayerExtension.swift in Sources */,
+				3A60E75D7E8C52749312170F2BA14599 /* CustomSegments.swift in Sources */,
+				DE4434496BECEF55D9E60DD5426DD174 /* DataEntry.swift in Sources */,
+				E5990B8107842276FA432572302A7224 /* UIBezierPathExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17E1804B5FB1D67C6970BE320233DBE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BarChartRace;
+			target = C20F9E3414BD753C6AE2B88AE05D1BF8 /* BarChartRace */;
+			targetProxy = 60BF6B6787F157A7389F3B5DA7799440 /* PBXContainerItemProxy */;
+		};
+		307931DFDA43111D73E045E135C9CF57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BarChartRace_Example";
+			target = 4D8DDB85317454620ED3228B632850E5 /* Pods-BarChartRace_Example */;
+			targetProxy = 1A254815CD586E99E56871CC21D88C13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1DF08035D3A7720CD3050C95068BDDA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558F9F74E28F73EAF9023343CAB95C78 /* Pods-BarChartRace_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarChartRace_Tests/Pods-BarChartRace_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarChartRace_Tests/Pods-BarChartRace_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EA67B34B0F152E53E512F88839FEAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1FFF0305016F4518349A4F5A1BA9A2F /* Pods-BarChartRace_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarChartRace_Example/Pods-BarChartRace_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarChartRace_Example/Pods-BarChartRace_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46970A311D10E4A90E33D345552867C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B348FAB1ADB60ED9061FCB3297A9F7 /* Pods-BarChartRace_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarChartRace_Example/Pods-BarChartRace_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarChartRace_Example/Pods-BarChartRace_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2EE79E95D306A6103FA0E10F2FE0A83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BarChartRace/BarChartRace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BarChartRace/BarChartRace-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BarChartRace/BarChartRace.modulemap";
+				PRODUCT_MODULE_NAME = BarChartRace;
+				PRODUCT_NAME = BarChartRace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB4F5F63D7D9B3794A44E472515C8CA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BarChartRace/BarChartRace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BarChartRace/BarChartRace-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BarChartRace/BarChartRace.modulemap";
+				PRODUCT_MODULE_NAME = BarChartRace;
+				PRODUCT_NAME = BarChartRace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE6C0C73297FBE2A09FEC1607C25F4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D374ADF6B874117E422E488D1B2271EA /* Pods-BarChartRace_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BarChartRace_Tests/Pods-BarChartRace_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BarChartRace_Tests/Pods-BarChartRace_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3411457218A37BA08F261B889294DD8C /* Build configuration list for PBXNativeTarget "BarChartRace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB4F5F63D7D9B3794A44E472515C8CA9 /* Debug */,
+				E2EE79E95D306A6103FA0E10F2FE0A83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53BF81D51678A17B8BF55F6F4A11B027 /* Build configuration list for PBXNativeTarget "Pods-BarChartRace_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46970A311D10E4A90E33D345552867C3 /* Debug */,
+				1EA67B34B0F152E53E512F88839FEAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EAF47D5FC9858E4A9164CE8A1C766B9 /* Build configuration list for PBXNativeTarget "Pods-BarChartRace_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE6C0C73297FBE2A09FEC1607C25F4A1 /* Debug */,
+				1DF08035D3A7720CD3050C95068BDDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
