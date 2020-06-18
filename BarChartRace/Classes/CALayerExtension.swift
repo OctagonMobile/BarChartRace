@@ -54,6 +54,7 @@ extension CALayer {
         textLayer.font = CTFontCreateWithName(font.fontName as CFString, font.pointSize, nil)
         textLayer.fontSize = font.pointSize
         textLayer.string = text
+        textLayer.truncationMode = .end
         self.addSublayer(textLayer)
         
         if animated, let oldFrame = oldFrame {

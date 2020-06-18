@@ -15,9 +15,10 @@ struct BasicBarEntry {
     let barHeight: CGFloat
     let space: CGFloat
     let data: DataEntry
-    
+    let titleWidth: CGFloat
+
     var bottomTitleFrame: CGRect {
-        return CGRect(x: 0, y: origin.y , width: barHeight + space, height: barHeight)
+        return CGRect(x: 5, y: origin.y , width: titleWidth, height: barHeight)
     }
     
     var textValueFrame: CGRect {

@@ -40,21 +40,38 @@ class BasicBarChartPresenter {
         
         let sortedDataEntries = dataEntries.sorted(by: { $0.height > $1.height})
         let computedBarHeight =  viewHeight * 2 / CGFloat((3 * dataEntries.count) + 1) //Height * 2 / (3Count + 1)
+        var computedTitleWidth = computeTitleWidth(forHeight: computedBarHeight)
+               if computedTitleWidth > viewWidth/10.0 {
+                   computedTitleWidth = viewWidth/10.0
+               }
         for (index, entry) in dataEntries.enumerated() {
-            let entryHeight = CGFloat(entry.height) * (viewWidth - leftSpace - topSpace)
+            let titlePadding: CGFloat = 10 /*Left and Right Title Padding*/
+            let entryHeight = CGFloat(entry.height) * (viewWidth - computedTitleWidth - titlePadding - topSpace)
             let indexInSortedDataEntries: Int = sortedDataEntries.firstIndex(where: { $0.title == entry.title}) ?? index
             
-            let xPosition: CGFloat = leftSpace
+            let xPosition: CGFloat = computedTitleWidth + titlePadding /*Left and right padding for title*/
             let yPosition = space + CGFloat(indexInSortedDataEntries) * (computedBarHeight + computedBarHeight/2.0)
 
             let origin = CGPoint(x: xPosition, y: yPosition)
             
-            let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry)
+            let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry, titleWidth: computedTitleWidth)
             
             result.append(barEntry)
         }
         
         return result
+    }
+    
+    func computeTitleWidth(forHeight height: CGFloat) -> CGFloat {
+        var maxWidth: CGFloat = 0.0
+       
+        for entry in dataEntries {
+            let width = entry.title.width(withConstrainedHeight: height, font: entry.titleValueFont)
+            if width > maxWidth {
+                maxWidth = width
+            }
+        }
+        return maxWidth
     }
     
     func computeHorizontalLines(viewHeight: CGFloat) -> [HorizontalLine] {
