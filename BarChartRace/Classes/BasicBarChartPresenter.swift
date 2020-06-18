@@ -39,7 +39,7 @@ class BasicBarChartPresenter {
     func computeBarEntries(viewWidth: CGFloat, viewHeight: CGFloat) -> [BasicBarEntry] {
         var result: [BasicBarEntry] = []
         
-        let sortedDataEntries = dataEntries.sorted(by: { $0.height > $1.height})
+        let sortedDataEntries = dataEntries.sorted(by: { $0.height >= $1.height})
         let computedBarHeight =  viewHeight * 2 / CGFloat((3 * dataEntries.count) + 1) //Height * 2 / (3Count + 1)
         var computedTitleWidth = computeTitleWidth(forHeight: computedBarHeight)
         let maxTitleWidth = viewWidth * maxBarTitleWidthPercent / 100
