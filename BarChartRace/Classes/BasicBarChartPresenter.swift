@@ -56,7 +56,8 @@ class BasicBarChartPresenter {
         }
         
         let titlePadding: CGFloat = 10 /*Left and Right Title Padding*/
-        let totalBarWidth = (viewWidth - computedTitleWidth - titlePadding - computedValueWidth)
+        let valuePadding: CGFloat = 16  /*Left and Right Value Padding*/
+        let totalBarWidth = (viewWidth - computedTitleWidth - titlePadding - valuePadding - computedValueWidth)
       
         for (index, entry) in dataEntries.enumerated() {
             let entryHeight = CGFloat(entry.height) * totalBarWidth
