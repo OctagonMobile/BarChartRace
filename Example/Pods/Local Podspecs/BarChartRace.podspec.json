@@ -1,6 +1,6 @@
 {
   "name": "BarChartRace",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "summary": "BarChartRace Animation",
   "description": "BarChartRace library used to generate race of bar chart bars.",
   "homepage": "https://github.com/OctagonMobile/BarChartRace",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/OctagonMobile/BarChartRace.git",
-    "tag": "0.1.0"
+    "tag": "0.9.0"
   },
   "platforms": {
     "ios": "13.0"
