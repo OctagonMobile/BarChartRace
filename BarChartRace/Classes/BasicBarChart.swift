@@ -9,6 +9,28 @@
 import UIKit
 
 public class BasicBarChart: UIView {
+    
+    /// BarChart Race Delegate
+    public var delegate: BarChartRaceDelegate?
+    
+    /// Time interval to update the data or to draw the next dataset
+    public var timeInterval: TimeInterval   =   1.0
+    
+    /// Current state of the Player
+    public var playerState: PlayerState     =   .unKnown {
+        didSet {
+            delegate?.playerStateUpdated(playerState)
+        }
+    }
+    
+    /// States of the player
+    public enum PlayerState {
+        case unKnown
+        case playing
+        case paused
+        case stopped
+    }
+
     /// contain all layers of the chart
     private let mainLayer: CALayer = CALayer()
     
@@ -38,17 +60,21 @@ public class BasicBarChart: UIView {
         }
     }
     
+    /// Index of the current DataSet
+    private var currentIndex: Int   =   0
+    
+    /// Timer to update the dataset
+    private var timer: Timer?
+    
+    /// List of  dataset
+    private var dataSets: [DataSet] = []
+    
     private var maxLeftTextBarX: CGFloat = CGFloat(Float.greatestFiniteMagnitude)
     private var minBarY: CGFloat = CGFloat(Float.greatestFiniteMagnitude)
     private var maxBarY: CGFloat = CGFloat(Float.leastNormalMagnitude)
     private let leftAxisWidth: CGFloat = 1.0
     
-    public func updateDataEntries(dataEntries: [DataEntry], animated: Bool) {
-        self.animated = animated
-        self.presenter.dataEntries = dataEntries
-        self.barEntries = self.presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
-    }
-    
+    //MARK: Overridden Funnctions
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -59,6 +85,45 @@ public class BasicBarChart: UIView {
         setupView()
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        self.updateDataSet(presenter.dataSet, animated: false)
+    }
+
+    //MARK: Public Functions
+    /// Setup the Barchar dataset values
+    /// - Parameter dataSets: List of dataset to be used for bar chart race
+    /// - Parameter animated: Animate Bar Chart Race. (true/false)
+    public func setupBarChartRace(_ dataSets: [DataSet], animated: Bool) {
+        self.animated = animated
+        self.dataSets = dataSets
+    }
+
+    /// Plays the BarChart Race
+    public func play() {
+        playerState = .playing
+        timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) {[unowned self] (timer) in
+            self.updateChart()
+        }
+        timer?.fire()
+    }
+    
+    /// Pauses the BarChart Race
+    public func pause() {
+        playerState = .paused
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    /// Stops  BarChart Race
+    public func stop() {
+        playerState = .stopped
+        timer?.invalidate()
+        timer = nil
+        currentIndex = 0
+    }
+
+    //MARK: Private Functions
     private func setupView() {
         scrollView.layer.addSublayer(mainLayer)
         self.addSubview(scrollView)
@@ -71,11 +136,24 @@ public class BasicBarChart: UIView {
         scrollView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
     }
     
-    public override func layoutSubviews() {
-        super.layoutSubviews()
-        self.updateDataEntries(dataEntries: presenter.dataEntries, animated: false)
+    private func updateDataSet(_ dataSet: DataSet?, animated: Bool) {
+        guard let dataSet = dataSet else { return }
+        presenter.dataSet = dataSet
+        barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
     }
     
+    private func updateChart() {
+        guard currentIndex <= dataSets.count - 1 else {
+            stop()
+            return
+        }
+        let dataSet = dataSets[currentIndex]
+        presenter.dataSet = dataSet
+        barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
+        delegate?.currentDataSet(dataSet)
+        currentIndex += 1
+    }
+        
     private func showEntry(index: Int, entry: BasicBarEntry, animated: Bool, oldEntry: BasicBarEntry?) {
         
         let cgColor = entry.data.color.cgColor

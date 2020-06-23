@@ -23,7 +23,12 @@ class BasicBarChartPresenter {
     private let topSpace: CGFloat = 40.0
     
     var dataEntries: [DataEntry] = []
-    
+    var dataSet: DataSet? {
+        didSet {
+            dataEntries = dataSet?.dataEntries ?? []
+        }
+    }
+
     let minBarHeight: CGFloat = 20
     let maxBarTitleWidthPercent: CGFloat = 22
     let maxBarValueWidthPercent: CGFloat = 22
