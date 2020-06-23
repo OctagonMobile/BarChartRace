@@ -104,6 +104,7 @@ public class BasicBarChart: UIView {
         playerState = .playing
         timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) {[unowned self] (timer) in
             self.updateChart()
+            self.currentIndex += 1
         }
         timer?.fire()
     }
@@ -121,6 +122,7 @@ public class BasicBarChart: UIView {
         timer?.invalidate()
         timer = nil
         currentIndex = 0
+        updateChart()
     }
 
     //MARK: Private Functions
@@ -151,7 +153,6 @@ public class BasicBarChart: UIView {
         presenter.dataSet = dataSet
         barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
         delegate?.currentDataSet(dataSet)
-        currentIndex += 1
     }
         
     private func showEntry(index: Int, entry: BasicBarEntry, animated: Bool, oldEntry: BasicBarEntry?) {
