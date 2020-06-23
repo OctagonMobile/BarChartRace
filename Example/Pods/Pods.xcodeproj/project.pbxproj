@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		056ED6AA5D9265544D31285AC970749C /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */; };
+		084A723FF05FE09C4C48D7B88500FF32 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C6FE0BDC53F52D07E7206E1CFB202F /* CALayerExtension.swift */; };
 		2E51C835A3861ACCC2AE3A8147084371 /* Pods-BarChartRace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A5CE4D763D6FA1E948C790DEDF944E /* Pods-BarChartRace_Example-dummy.m */; };
-		34F9A86BB893068FE21F369E0093BB3E /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */; };
-		3A60E75D7E8C52749312170F2BA14599 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */; };
-		51633CE70E0A1A125FEFFA0A7617FCD2 /* BarChartRace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51800B7824A234550088EE8E /* BarChartRaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51800B7624A234550088EE8E /* BarChartRaceDelegate.swift */; };
-		51800B7924A234550088EE8E /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51800B7724A234550088EE8E /* DataSet.swift */; };
+		4BC9783D0BF3C65BA464DE158A7C1034 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5B8EC1C0E080959E7E9DA0700A7EB9 /* BasicBarChart.swift */; };
+		51C981C524A238CE0048688F /* BarChartRaceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C981C324A238CE0048688F /* BarChartRaceDelegate.swift */; };
+		51C981C624A238CF0048688F /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C981C424A238CE0048688F /* DataSet.swift */; };
 		53B394BE71A8D42F4CBECF6E4CE86919 /* Pods-BarChartRace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2543490ABDF8A7BA7174D80AA5C4C1 /* Pods-BarChartRace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ABA8F6B51F2BB6E49506D9F4BDFCCC5 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */; };
+		66578B6A9C94D018A36E88A421308CA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		67B86DA44A4BA4674169CDA7CC321D33 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87277D42ED3C9E97C04EAF62A8A7762C /* BasicBarChartPresenter.swift */; };
+		6EA80AE82AFD6F02E4F74E6825D68CFC /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007060CDEF0D1485BF19B1E93CC4850 /* BasicBarEntry.swift */; };
 		78056248EE9E34243183E6D9AE4839D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		813B407EB0AFFC3A024291AB4740BC77 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AEDDFC206FF8F4BAD64AAD36BF1EE1 /* CustomSegments.swift */; };
+		889B8741222B9873F1664A0E182F0526 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739E22C073F905E7A731C49F1081B98B /* DataEntry.swift */; };
+		8D804E12FF281D9F1CFD1B893D55CFDE /* BarChartRace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 847BF874A4103B4041AD4E012863DFFE /* BarChartRace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94C9D504E3DB981CF2556F3C6CBA83DC /* Pods-BarChartRace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B4395663EA7708D10B9C666C77CA97 /* Pods-BarChartRace_Tests-dummy.m */; };
 		98898BCBD14AC9C04838B639D4FDFBD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B0AD92D1A471FB771F8BE57950096694 /* BarChartRace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */; };
+		9B64459783F70EE6879E22297BB9E8CE /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597293BAC70829A4B3768317935653CC /* UIBezierPathExtension.swift */; };
+		9F240C024781FC7858E064312BD1B80E /* BarChartRace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFD1753443D4D315FF3FEAE4E09F3B /* BarChartRace-dummy.m */; };
 		C2F2270C2447C824F57E52840FCDFB03 /* Pods-BarChartRace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AC87DFDCCF7697F4CD213CF1C960E93 /* Pods-BarChartRace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4BAC44D45F643458835EBE1740BA21A /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */; };
-		DE4434496BECEF55D9E60DD5426DD174 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */; };
-		E5990B8107842276FA432572302A7224 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */; };
-		EA3EE99909843DDDDE5248F9B7D77165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		ED5903423860558FC270E105769EF59F /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */; };
+		E6DDC32AF1BEE1D5904FBA59E00B2FF1 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559BCEEA4018939CC9FF6359B12DEF0C /* ArrayExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,64 +46,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0007060CDEF0D1485BF19B1E93CC4850 /* BasicBarEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarEntry.swift; path = BarChartRace/Classes/BasicBarEntry.swift; sourceTree = "<group>"; };
 		02B348FAB1ADB60ED9061FCB3297A9F7 /* Pods-BarChartRace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSegments.swift; path = BarChartRace/Classes/CustomSegments.swift; sourceTree = "<group>"; };
-		1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChart.swift; path = BarChartRace/Classes/BasicBarChart.swift; sourceTree = "<group>"; };
-		2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarChartRace-dummy.m"; sourceTree = "<group>"; };
+		09A4F45EE7E403F73A75F2E7E3530C7F /* BarChartRace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarChartRace.modulemap; sourceTree = "<group>"; };
+		14C6FE0BDC53F52D07E7206E1CFB202F /* CALayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = BarChartRace/Classes/CALayerExtension.swift; sourceTree = "<group>"; };
 		2C9C9CE03614104BCBD1EB56F50F8A4B /* Pods-BarChartRace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BarChartRace_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35FABB1CD7BE3ADDE3B94EB326300FBE /* BarChartRace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-prefix.pch"; sourceTree = "<group>"; };
 		38A5CE4D763D6FA1E948C790DEDF944E /* Pods-BarChartRace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarChartRace_Example-dummy.m"; sourceTree = "<group>"; };
-		39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.release.xcconfig; sourceTree = "<group>"; };
-		4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-umbrella.h"; sourceTree = "<group>"; };
-		46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = BarChartRace/Classes/CALayerExtension.swift; sourceTree = "<group>"; };
-		4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataEntry.swift; path = BarChartRace/Classes/DataEntry.swift; sourceTree = "<group>"; };
-		51800B7624A234550088EE8E /* BarChartRaceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartRaceDelegate.swift; path = BarChartRace/Classes/BarChartRaceDelegate.swift; sourceTree = "<group>"; };
-		51800B7724A234550088EE8E /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSet.swift; path = BarChartRace/Classes/DataSet.swift; sourceTree = "<group>"; };
+		51C981C324A238CE0048688F /* BarChartRaceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BarChartRaceDelegate.swift; path = BarChartRace/Classes/BarChartRaceDelegate.swift; sourceTree = "<group>"; };
+		51C981C424A238CE0048688F /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSet.swift; path = BarChartRace/Classes/DataSet.swift; sourceTree = "<group>"; };
+		52BA58E645EF161D21E449437C375E08 /* BarChartRace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-prefix.pch"; sourceTree = "<group>"; };
 		558F9F74E28F73EAF9023343CAB95C78 /* Pods-BarChartRace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5B19D6333667C5C0A6286C4AFA1D4032 /* BarChartRace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BarChartRace.modulemap; sourceTree = "<group>"; };
-		63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarEntry.swift; path = BarChartRace/Classes/BasicBarEntry.swift; sourceTree = "<group>"; };
+		559BCEEA4018939CC9FF6359B12DEF0C /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = BarChartRace/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
+		56AEDDFC206FF8F4BAD64AAD36BF1EE1 /* CustomSegments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomSegments.swift; path = BarChartRace/Classes/CustomSegments.swift; sourceTree = "<group>"; };
+		597293BAC70829A4B3768317935653CC /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPathExtension.swift; path = BarChartRace/Classes/UIBezierPathExtension.swift; sourceTree = "<group>"; };
 		692B91F609D7F5FF2967B1094490BEEE /* Pods-BarChartRace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BarChartRace_Example.modulemap"; sourceTree = "<group>"; };
 		6DFEEFA37175ECF9E791BD5011E77343 /* Pods-BarChartRace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BarChartRace_Tests.modulemap"; sourceTree = "<group>"; };
+		6E9E7CC722828D6507293B5E9C211261 /* BarChartRace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BarChartRace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		739E22C073F905E7A731C49F1081B98B /* DataEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataEntry.swift; path = BarChartRace/Classes/DataEntry.swift; sourceTree = "<group>"; };
 		7814412A6E1A9D4E60B8A1CC8729AE92 /* Pods-BarChartRace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Example-Info.plist"; sourceTree = "<group>"; };
 		7AC87DFDCCF7697F4CD213CF1C960E93 /* Pods-BarChartRace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarChartRace_Example-umbrella.h"; sourceTree = "<group>"; };
 		7E2543490ABDF8A7BA7174D80AA5C4C1 /* Pods-BarChartRace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BarChartRace_Tests-umbrella.h"; sourceTree = "<group>"; };
-		87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPathExtension.swift; path = BarChartRace/Classes/UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		847BF874A4103B4041AD4E012863DFFE /* BarChartRace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BarChartRace-umbrella.h"; sourceTree = "<group>"; };
+		87277D42ED3C9E97C04EAF62A8A7762C /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChartPresenter.swift; path = BarChartRace/Classes/BasicBarChartPresenter.swift; sourceTree = "<group>"; };
 		88F4B6FB1CC4275AF2AE4CA270BC98C6 /* Pods_BarChartRace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarChartRace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8946A9BE77EE70C1313557F0FEC7D32B /* BarChartRace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.debug.xcconfig; sourceTree = "<group>"; };
 		94E71BC6BE751B8A744667388D1181A6 /* Pods-BarChartRace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D6651E00A71EBB26B56B73BD3B269F3 /* Pods_BarChartRace_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BarChartRace_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F20761F92872EC89CBA45C70648739D /* BarChartRace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BarChartRace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1FFF0305016F4518349A4F5A1BA9A2F /* Pods-BarChartRace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = BarChartRace/Classes/ArrayExtension.swift; sourceTree = "<group>"; };
-		A655908D6B0A9D53E18E1A9246926906 /* BarChartRace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarChartRace-Info.plist"; sourceTree = "<group>"; };
-		B644BAABACE7DC708B299A382867CCB8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B8580F32C6DCCF1AB7645FAA2596B601 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A2FE900F548CDAA17010C724CAE895A4 /* BarChartRace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.release.xcconfig; sourceTree = "<group>"; };
+		B4CFD1753443D4D315FF3FEAE4E09F3B /* BarChartRace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BarChartRace-dummy.m"; sourceTree = "<group>"; };
 		BC05A1BD0AEFF3C93011C9DD992BA5F9 /* Pods-BarChartRace_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Tests-Info.plist"; sourceTree = "<group>"; };
+		C380248950D60D94002AB5916CD69B65 /* BarChartRace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BarChartRace-Info.plist"; sourceTree = "<group>"; };
 		C4B4395663EA7708D10B9C666C77CA97 /* Pods-BarChartRace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BarChartRace_Tests-dummy.m"; sourceTree = "<group>"; };
 		D374ADF6B874117E422E488D1B2271EA /* Pods-BarChartRace_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BarChartRace_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BarChartRace.debug.xcconfig; sourceTree = "<group>"; };
+		DA27644F09D9810329DE28FDF0704227 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DBF9A6641D2880BAF325BB73AF5C4310 /* Pods-BarChartRace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BarChartRace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E16AE9092D79C130151CFA9455EA4E70 /* Pods-BarChartRace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarChartRace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E83E0C9E341FA7DE1FBEFE0450CAA417 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ED65BB498C496A07E9A9FB05722C6D2B /* Pods-BarChartRace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BarChartRace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF273B7B14DCE4BEA4F49AC3A5E55813 /* BarChartRace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BarChartRace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChartPresenter.swift; path = BarChartRace/Classes/BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+		FB5B8EC1C0E080959E7E9DA0700A7EB9 /* BasicBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicBarChart.swift; path = BarChartRace/Classes/BasicBarChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0878809AE90AE4B7AA9BCB3DD44073DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EA3EE99909843DDDDE5248F9B7D77165 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6069B129DCBA70BC8493E1C5B9E5CAD8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				98898BCBD14AC9C04838B639D4FDFBD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EF8F01BF6AE560EC650BB4297BB217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66578B6A9C94D018A36E88A421308CA8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,19 +118,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F288ABA42BF95D937AD35A0766C3035 /* Support Files */ = {
+		2396A9AB2109F124E70DF0897C44B770 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B19D6333667C5C0A6286C4AFA1D4032 /* BarChartRace.modulemap */,
-				2086420341FE20D3D603F04B15268DC4 /* BarChartRace-dummy.m */,
-				A655908D6B0A9D53E18E1A9246926906 /* BarChartRace-Info.plist */,
-				35FABB1CD7BE3ADDE3B94EB326300FBE /* BarChartRace-prefix.pch */,
-				4487067B9269C2F550C770AFA86920EC /* BarChartRace-umbrella.h */,
-				D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */,
-				39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */,
+				90FC0EA5EF28B8C8E5D7002AB05660D3 /* BarChartRace */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BarChartRace";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		7F3629232E07CF77636FB00C036F3DBE /* Pods-BarChartRace_Example */ = {
@@ -150,14 +143,24 @@
 			path = "Target Support Files/Pods-BarChartRace_Example";
 			sourceTree = "<group>";
 		};
-		9C56249F70F97AC77C596DB28D909632 /* Pod */ = {
+		90FC0EA5EF28B8C8E5D7002AB05660D3 /* BarChartRace */ = {
 			isa = PBXGroup;
 			children = (
-				9F20761F92872EC89CBA45C70648739D /* BarChartRace.podspec */,
-				B8580F32C6DCCF1AB7645FAA2596B601 /* LICENSE */,
-				B644BAABACE7DC708B299A382867CCB8 /* README.md */,
+				51C981C324A238CE0048688F /* BarChartRaceDelegate.swift */,
+				51C981C424A238CE0048688F /* DataSet.swift */,
+				559BCEEA4018939CC9FF6359B12DEF0C /* ArrayExtension.swift */,
+				FB5B8EC1C0E080959E7E9DA0700A7EB9 /* BasicBarChart.swift */,
+				87277D42ED3C9E97C04EAF62A8A7762C /* BasicBarChartPresenter.swift */,
+				0007060CDEF0D1485BF19B1E93CC4850 /* BasicBarEntry.swift */,
+				14C6FE0BDC53F52D07E7206E1CFB202F /* CALayerExtension.swift */,
+				56AEDDFC206FF8F4BAD64AAD36BF1EE1 /* CustomSegments.swift */,
+				739E22C073F905E7A731C49F1081B98B /* DataEntry.swift */,
+				597293BAC70829A4B3768317935653CC /* UIBezierPathExtension.swift */,
+				BBB8E74ACE11FC235724BFD17439FF23 /* Pod */,
+				CCB83EB433DA54E7D734FC4830B7E57C /* Support Files */,
 			);
-			name = Pod;
+			name = BarChartRace;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A43624976E217D587EC25AC896E27D37 /* Pods-BarChartRace_Tests */ = {
@@ -186,6 +189,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BBB8E74ACE11FC235724BFD17439FF23 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E7CC722828D6507293B5E9C211261 /* BarChartRace.podspec */,
+				DA27644F09D9810329DE28FDF0704227 /* LICENSE */,
+				E83E0C9E341FA7DE1FBEFE0450CAA417 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,43 +207,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C63586E85A12926E2B3649B4515B3847 /* BarChartRace */ = {
+		CCB83EB433DA54E7D734FC4830B7E57C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				51800B7624A234550088EE8E /* BarChartRaceDelegate.swift */,
-				51800B7724A234550088EE8E /* DataSet.swift */,
-				A3A34CA7E44AE94278FEA030C6BB3A7D /* ArrayExtension.swift */,
-				1EE4F688164B7D596967972B3989C996 /* BasicBarChart.swift */,
-				FBA146BE6546C5EFF015DDC5646283C2 /* BasicBarChartPresenter.swift */,
-				63A73E2310264237452D61CF18367E68 /* BasicBarEntry.swift */,
-				46AB3F1EE8E463D961A82D06876CB3B1 /* CALayerExtension.swift */,
-				02DC5A27031FAA1C6367C28B8E895F9B /* CustomSegments.swift */,
-				4A0434570A597CBAFFEFCB17A5AE451E /* DataEntry.swift */,
-				87DC72142A3032EDE04154AC752428AB /* UIBezierPathExtension.swift */,
-				9C56249F70F97AC77C596DB28D909632 /* Pod */,
-				7F288ABA42BF95D937AD35A0766C3035 /* Support Files */,
+				09A4F45EE7E403F73A75F2E7E3530C7F /* BarChartRace.modulemap */,
+				B4CFD1753443D4D315FF3FEAE4E09F3B /* BarChartRace-dummy.m */,
+				C380248950D60D94002AB5916CD69B65 /* BarChartRace-Info.plist */,
+				52BA58E645EF161D21E449437C375E08 /* BarChartRace-prefix.pch */,
+				847BF874A4103B4041AD4E012863DFFE /* BarChartRace-umbrella.h */,
+				8946A9BE77EE70C1313557F0FEC7D32B /* BarChartRace.debug.xcconfig */,
+				A2FE900F548CDAA17010C724CAE895A4 /* BarChartRace.release.xcconfig */,
 			);
-			name = BarChartRace;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BarChartRace";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D20B18F5DC1964D914238A3D0121FC8A /* Development Pods */,
+				2396A9AB2109F124E70DF0897C44B770 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				B4C636D6DC4C2DD64C16710195B54DA0 /* Products */,
 				D766416C9856D4EB95DCC12B1FAD5A19 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D20B18F5DC1964D914238A3D0121FC8A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C63586E85A12926E2B3649B4515B3847 /* BarChartRace */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -253,11 +253,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		50F74C9F2FD7A5AE740C19945A896D03 /* Headers */ = {
+		7BAE8FA6565850CE38F51F8D4C2740F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51633CE70E0A1A125FEFFA0A7617FCD2 /* BarChartRace-umbrella.h in Headers */,
+				8D804E12FF281D9F1CFD1B893D55CFDE /* BarChartRace-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +320,12 @@
 		};
 		C20F9E3414BD753C6AE2B88AE05D1BF8 /* BarChartRace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3411457218A37BA08F261B889294DD8C /* Build configuration list for PBXNativeTarget "BarChartRace" */;
+			buildConfigurationList = BDB043628F45EDA6BBCA1A9132CCCA5A /* Build configuration list for PBXNativeTarget "BarChartRace" */;
 			buildPhases = (
-				50F74C9F2FD7A5AE740C19945A896D03 /* Headers */,
-				954EE4FBA26B53896B6F92486589619B /* Sources */,
-				0878809AE90AE4B7AA9BCB3DD44073DA /* Frameworks */,
-				0237074DB6362DB15D16EE19CE2A4334 /* Resources */,
+				7BAE8FA6565850CE38F51F8D4C2740F2 /* Headers */,
+				4B252E762AA48A46147F9CD796DF9120 /* Sources */,
+				61EF8F01BF6AE560EC650BB4297BB217 /* Frameworks */,
+				080D0F987A39E30EDCC461B67804396E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -366,7 +366,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0237074DB6362DB15D16EE19CE2A4334 /* Resources */ = {
+		080D0F987A39E30EDCC461B67804396E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,29 +398,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B252E762AA48A46147F9CD796DF9120 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DDC32AF1BEE1D5904FBA59E00B2FF1 /* ArrayExtension.swift in Sources */,
+				9F240C024781FC7858E064312BD1B80E /* BarChartRace-dummy.m in Sources */,
+				4BC9783D0BF3C65BA464DE158A7C1034 /* BasicBarChart.swift in Sources */,
+				67B86DA44A4BA4674169CDA7CC321D33 /* BasicBarChartPresenter.swift in Sources */,
+				6EA80AE82AFD6F02E4F74E6825D68CFC /* BasicBarEntry.swift in Sources */,
+				51C981C624A238CF0048688F /* DataSet.swift in Sources */,
+				084A723FF05FE09C4C48D7B88500FF32 /* CALayerExtension.swift in Sources */,
+				51C981C524A238CE0048688F /* BarChartRaceDelegate.swift in Sources */,
+				813B407EB0AFFC3A024291AB4740BC77 /* CustomSegments.swift in Sources */,
+				889B8741222B9873F1664A0E182F0526 /* DataEntry.swift in Sources */,
+				9B64459783F70EE6879E22297BB9E8CE /* UIBezierPathExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		819FBB9FD8A62D8567AD9E80A55A13D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2E51C835A3861ACCC2AE3A8147084371 /* Pods-BarChartRace_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		954EE4FBA26B53896B6F92486589619B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34F9A86BB893068FE21F369E0093BB3E /* ArrayExtension.swift in Sources */,
-				B0AD92D1A471FB771F8BE57950096694 /* BarChartRace-dummy.m in Sources */,
-				056ED6AA5D9265544D31285AC970749C /* BasicBarChart.swift in Sources */,
-				D4BAC44D45F643458835EBE1740BA21A /* BasicBarChartPresenter.swift in Sources */,
-				ED5903423860558FC270E105769EF59F /* BasicBarEntry.swift in Sources */,
-				51800B7924A234550088EE8E /* DataSet.swift in Sources */,
-				6ABA8F6B51F2BB6E49506D9F4BDFCCC5 /* CALayerExtension.swift in Sources */,
-				51800B7824A234550088EE8E /* BarChartRaceDelegate.swift in Sources */,
-				3A60E75D7E8C52749312170F2BA14599 /* CustomSegments.swift in Sources */,
-				DE4434496BECEF55D9E60DD5426DD174 /* DataEntry.swift in Sources */,
-				E5990B8107842276FA432572302A7224 /* UIBezierPathExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,9 +608,9 @@
 			};
 			name = Debug;
 		};
-		E2EE79E95D306A6103FA0E10F2FE0A83 /* Release */ = {
+		504A4A3AAB4C36ACEC20205698AC087D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39E2C91F5A83C25FC1EDFC1EFC12DFF7 /* BarChartRace.release.xcconfig */;
+			baseConfigurationReference = A2FE900F548CDAA17010C724CAE895A4 /* BarChartRace.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -642,9 +642,9 @@
 			};
 			name = Release;
 		};
-		EB4F5F63D7D9B3794A44E472515C8CA9 /* Debug */ = {
+		AB84057227D125294F19B9ECDE9B7A19 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D62097D100D5765D33A9BA4BA8451BFB /* BarChartRace.debug.xcconfig */;
+			baseConfigurationReference = 8946A9BE77EE70C1313557F0FEC7D32B /* BarChartRace.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -777,15 +777,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3411457218A37BA08F261B889294DD8C /* Build configuration list for PBXNativeTarget "BarChartRace" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB4F5F63D7D9B3794A44E472515C8CA9 /* Debug */,
-				E2EE79E95D306A6103FA0E10F2FE0A83 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -809,6 +800,15 @@
 			buildConfigurations = (
 				EE6C0C73297FBE2A09FEC1607C25F4A1 /* Debug */,
 				1DF08035D3A7720CD3050C95068BDDA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB043628F45EDA6BBCA1A9132CCCA5A /* Build configuration list for PBXNativeTarget "BarChartRace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB84057227D125294F19B9ECDE9B7A19 /* Debug */,
+				504A4A3AAB4C36ACEC20205698AC087D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
