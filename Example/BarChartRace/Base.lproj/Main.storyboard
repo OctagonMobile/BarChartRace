@@ -28,30 +28,26 @@
                                 </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-E7-7jy" customClass="BasicBarChart" customModule="BarChartRace">
-                                <rect key="frame" x="0.0" y="58" width="1112" height="688"/>
+                                <rect key="frame" x="0.0" y="58" width="1112" height="672"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIO-Nu-ryj">
-                                <rect key="frame" x="456" y="766" width="200" height="48"/>
+                                <rect key="frame" x="456" y="750" width="200" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-II-3JJ">
-                                        <rect key="frame" x="115" y="0.0" width="85" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-II-3JJ">
+                                        <rect key="frame" x="115" y="0.0" width="85" height="64"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Stop"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        </variation>
+                                        <state key="normal" image="Stop"/>
+                                        <variation key="heightClass=regular-widthClass=regular"/>
                                         <connections>
                                             <action selector="stopButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="All-Xu-fpJ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFr-qE-85R">
-                                        <rect key="frame" x="0.0" y="0.0" width="85" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFr-qE-85R">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="64"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Play"/>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        </variation>
+                                        <state key="normal" image="Play"/>
+                                        <variation key="heightClass=regular-widthClass=regular"/>
                                         <connections>
                                             <action selector="playButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QZp-5j-PGH"/>
                                         </connections>
@@ -71,7 +67,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-UA-9zI">
-                                <rect key="frame" x="1092" y="726" width="0.0" height="0.0"/>
+                                <rect key="frame" x="1092" y="710" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,4 +102,8 @@
             <point key="canvasLocation" x="136.51079136690649" y="133.09352517985613"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Play" width="64" height="64"/>
+        <image name="Stop" width="64" height="64"/>
+    </resources>
 </document>

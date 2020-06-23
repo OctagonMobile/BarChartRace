@@ -87,7 +87,8 @@ extension ViewController: BarChartRaceDelegate {
     
     func playerStateUpdated(_ state: BasicBarChart.PlayerState) {
         let playButtonTitle = (state == .playing) ? "Pause" : "Play"
-        playButton.setTitle(playButtonTitle, for: .normal)
+        
+        playButton.setImage(UIImage(named: playButtonTitle), for: .normal)
         stopButton.isEnabled = (state == .playing || state == .paused)
     }
     
