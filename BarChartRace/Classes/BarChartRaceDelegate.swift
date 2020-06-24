@@ -14,6 +14,6 @@ public protocol BarChartRaceDelegate {
     
     /// Called when the barchart's dataset updated
     /// - Parameter dataSet: Current dataset shown on the barchart
-    func currentDataSet(_ dataSet: DataSet)
+    func currentDataSet(_ dataSet: DataSet, index: Int)
 }
 

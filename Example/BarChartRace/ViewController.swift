@@ -11,12 +11,12 @@ import BarChartRace
 
 class ViewController: UIViewController {
     
+//    @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var barChart: BasicBarChart!
     
-    private let numSet = 80
+    private let numSet = 10
     private let numEntry = 10
 
     //MARK: Life Cycle Methods
@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         barChart.delegate = self
         let dataSets = generateRandomDataSets()
         barChart.setupBarChartRace(dataSets, animated: true)
+//        barChart.timeInterval = 1.0
+//
+//        slider.isContinuous = true
+//        slider.value = 0
+//        slider.minimumValue = 0.0
+//        slider.maximumValue = Float(dataSets.count - 1)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,6 +71,12 @@ class ViewController: UIViewController {
         return result
     }
     
+    private func updateDateOnUI(_ date: Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "d MMM yyyy"
+        dateLabel.text = formatter.string(from: date)
+    }
+    
     //MARK: Button Actions
     /// Play/Pause Button's Action
     /// - Parameter sender: Sender of the action.
@@ -75,26 +87,29 @@ class ViewController: UIViewController {
             barChart.play()
         }
     }
-    
-    /// Stop Button Action
-    /// - Parameter sender: Sender of the action.
-    @IBAction func stopButtonAction(_ sender: Any) {
-        self.barChart.stop()
-    }
 }
 
 extension ViewController: BarChartRaceDelegate {
-    
+
     func playerStateUpdated(_ state: BasicBarChart.PlayerState) {
         let playButtonTitle = (state == .playing) ? "Pause" : "Play"
-        
+
         playButton.setImage(UIImage(named: playButtonTitle), for: .normal)
-        stopButton.isEnabled = (state == .playing || state == .paused)
     }
-    
-    func currentDataSet(_ dataSet: DataSet) {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "d MMM yyyy"
-        dateLabel.text = formatter.string(from: dataSet.date)
+
+    func currentDataSet(_ dataSet: DataSet, index: Int) {
+
+        updateDateOnUI(dataSet.date)
+
+//        if barChart.playerState == .playing {
+////            let calculatedValue = Float(index) / Float(numSet)
+////            self.slider.setValue(calculatedValue, animated: true)
+//
+//            let animationTime = barChart.timeInterval //+ 0.5 // 0.5 is added to make it smoother
+//            UIView.animate(withDuration: animationTime) {
+//                let calculatedValue = Float(index) / Float(self.numSet-1)
+//                self.slider.setValue(Float(calculatedValue), animated: true)
+//            }
+//        }
     }
 }

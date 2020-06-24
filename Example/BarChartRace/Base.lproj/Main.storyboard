@@ -32,22 +32,15 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIO-Nu-ryj">
-                                <rect key="frame" x="456" y="750" width="200" height="64"/>
+                                <rect key="frame" x="524" y="750" width="64" height="64"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWc-II-3JJ">
-                                        <rect key="frame" x="115" y="0.0" width="85" height="64"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" image="Stop"/>
-                                        <variation key="heightClass=regular-widthClass=regular"/>
-                                        <connections>
-                                            <action selector="stopButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="All-Xu-fpJ"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFr-qE-85R">
-                                        <rect key="frame" x="0.0" y="0.0" width="85" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="n3b-5b-dRj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" image="Play"/>
-                                        <variation key="heightClass=regular-widthClass=regular"/>
                                         <connections>
                                             <action selector="playButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QZp-5j-PGH"/>
                                         </connections>
@@ -56,14 +49,9 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="NFr-qE-85R" secondAttribute="bottom" id="HmJ-jh-OAJ"/>
-                                    <constraint firstItem="pWc-II-3JJ" firstAttribute="width" secondItem="NFr-qE-85R" secondAttribute="width" id="MEc-e4-aM6"/>
-                                    <constraint firstItem="pWc-II-3JJ" firstAttribute="top" secondItem="IIO-Nu-ryj" secondAttribute="top" id="NUf-0O-Mb3"/>
-                                    <constraint firstItem="pWc-II-3JJ" firstAttribute="leading" secondItem="NFr-qE-85R" secondAttribute="trailing" constant="30" id="QAO-mu-1ls"/>
-                                    <constraint firstAttribute="trailing" secondItem="pWc-II-3JJ" secondAttribute="trailing" id="ROV-Ah-Cpm"/>
                                     <constraint firstItem="NFr-qE-85R" firstAttribute="leading" secondItem="IIO-Nu-ryj" secondAttribute="leading" id="UhV-Uc-MgL"/>
-                                    <constraint firstAttribute="width" constant="200" id="gi6-CR-q5X"/>
                                     <constraint firstItem="NFr-qE-85R" firstAttribute="top" secondItem="IIO-Nu-ryj" secondAttribute="top" id="iGf-Gf-eLR"/>
-                                    <constraint firstAttribute="bottom" secondItem="pWc-II-3JJ" secondAttribute="bottom" id="pH5-u0-GmG"/>
+                                    <constraint firstAttribute="trailing" secondItem="NFr-qE-85R" secondAttribute="trailing" id="jH6-D2-Fxw"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgc-UA-9zI">
@@ -81,11 +69,11 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="IIO-Nu-ryj" secondAttribute="bottom" constant="20" id="0K0-ei-BIi"/>
                             <constraint firstItem="YQL-gc-7Id" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="1qV-LA-Ucw"/>
                             <constraint firstItem="IIO-Nu-ryj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4QF-hy-pYb"/>
-                            <constraint firstItem="IIO-Nu-ryj" firstAttribute="top" secondItem="DD1-E7-7jy" secondAttribute="bottom" constant="20" id="8rO-Cl-7mt"/>
                             <constraint firstItem="Kgc-UA-9zI" firstAttribute="trailing" secondItem="DD1-E7-7jy" secondAttribute="trailing" constant="-20" id="Ebm-Zj-hps"/>
                             <constraint firstAttribute="trailing" secondItem="DD1-E7-7jy" secondAttribute="trailing" id="JDF-NY-DGV"/>
                             <constraint firstItem="DD1-E7-7jy" firstAttribute="top" secondItem="YQL-gc-7Id" secondAttribute="bottom" constant="10" id="Ujy-KN-9dQ"/>
                             <constraint firstItem="YQL-gc-7Id" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rbU-Qa-0xy"/>
+                            <constraint firstItem="IIO-Nu-ryj" firstAttribute="top" secondItem="DD1-E7-7jy" secondAttribute="bottom" constant="20" id="sIz-as-1Di"/>
                             <constraint firstItem="DD1-E7-7jy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="sSw-uI-8uN"/>
                             <constraint firstItem="Kgc-UA-9zI" firstAttribute="bottom" secondItem="DD1-E7-7jy" secondAttribute="bottom" constant="-20" id="veC-QS-bMF"/>
                         </constraints>
@@ -94,7 +82,6 @@
                         <outlet property="barChart" destination="DD1-E7-7jy" id="FR3-fI-PEn"/>
                         <outlet property="dateLabel" destination="Kgc-UA-9zI" id="utS-CN-0E0"/>
                         <outlet property="playButton" destination="NFr-qE-85R" id="yRX-2K-88M"/>
-                        <outlet property="stopButton" destination="pWc-II-3JJ" id="Ihh-sX-JWV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -104,6 +91,5 @@
     </scenes>
     <resources>
         <image name="Play" width="64" height="64"/>
-        <image name="Stop" width="64" height="64"/>
     </resources>
 </document>

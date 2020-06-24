@@ -101,6 +101,9 @@ public class BasicBarChart: UIView {
 
     /// Plays the BarChart Race
     public func play() {
+        if currentIndex >= dataSets.count - 1 {
+            currentIndex = 0
+        }
         playerState = .playing
         timer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) {[unowned self] (timer) in
             self.updateChart()
@@ -121,10 +124,19 @@ public class BasicBarChart: UIView {
         playerState = .stopped
         timer?.invalidate()
         timer = nil
-        currentIndex = 0
+        currentIndex = dataSets.count - 1
         updateChart()
     }
 
+    public func barChartRaceUpdateTo(_ index: Int) {
+        guard index <= dataSets.count-1 else {
+            return
+        }
+        
+        currentIndex = index
+        updateChart()
+    }
+    
     //MARK: Private Functions
     private func setupView() {
         scrollView.layer.addSublayer(mainLayer)
@@ -152,7 +164,7 @@ public class BasicBarChart: UIView {
         let dataSet = dataSets[currentIndex]
         presenter.dataSet = dataSet
         barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
-        delegate?.currentDataSet(dataSet)
+        delegate?.currentDataSet(dataSet, index: currentIndex)
     }
         
     private func showEntry(index: Int, entry: BasicBarEntry, animated: Bool, oldEntry: BasicBarEntry?) {
