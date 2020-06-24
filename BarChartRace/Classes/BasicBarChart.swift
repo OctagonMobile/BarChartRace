@@ -23,6 +23,12 @@ public class BasicBarChart: UIView {
         }
     }
     
+    /// show all the bar's title with same color (if this is nil, then it displays as per Bar's color)
+    public var titleColor: UIColor?
+    
+    /// Show all the bar's value with same color (if this is nil, then it displays as per Bar's color)
+    public var valueColor: UIColor?
+
     /// States of the player
     public enum PlayerState {
         case unKnown
@@ -175,10 +181,10 @@ public class BasicBarChart: UIView {
         mainLayer.addRectangleLayer(frame: entry.barFrame, color: cgColor, animated: animated, oldFrame: oldEntry?.barFrame)
 
         // Show an Int value above the bar
-        mainLayer.addTextLayer(frame: entry.textValueFrame, color: cgColor, font: entry.data.textValueFont, text: entry.data.textValue, animated: animated, oldFrame: oldEntry?.textValueFrame)
+        mainLayer.addTextLayer(frame: entry.textValueFrame, color: self.titleColor?.cgColor ?? cgColor, font: entry.data.textValueFont, text: entry.data.textValue, animated: animated, oldFrame: oldEntry?.textValueFrame)
 
 //        // Show a title below the bar
-        mainLayer.addTextLayer(frame: entry.bottomTitleFrame, color: cgColor, font: entry.data.titleValueFont, text: entry.data.title, animated: animated, oldFrame: oldEntry?.bottomTitleFrame)
+        mainLayer.addTextLayer(frame: entry.bottomTitleFrame, color: self.valueColor?.cgColor ?? cgColor, font: entry.data.titleValueFont, text: entry.data.title, animated: animated, oldFrame: oldEntry?.bottomTitleFrame)
        
         
         maxLeftTextBarX = entry.barFrame.origin.x

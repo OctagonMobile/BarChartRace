@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         barChart.delegate = self
         let dataSets = generateRandomDataSets()
         barChart.setupBarChartRace(dataSets, animated: true)
+        barChart.titleColor = .black
+        barChart.valueColor = .black
 //        barChart.timeInterval = 1.0
 //
 //        slider.isContinuous = true
