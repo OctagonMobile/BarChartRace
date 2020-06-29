@@ -40,7 +40,7 @@ class BasicBarChartPresenter {
 
     
     func computeBarEntries(viewWidth: CGFloat, viewHeight: CGFloat) -> [BasicBarEntry] {
-        space = 10.0
+        space = 0.0
         let availableHeight = viewHeight - 2 * space
         var result: [BasicBarEntry] = []
         

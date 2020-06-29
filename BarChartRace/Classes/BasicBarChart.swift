@@ -200,7 +200,7 @@ public class BasicBarChart: UIView {
     
     private func showLeftAxis() {
         let leftAxisX = maxLeftTextBarX - leftAxisWidth
-        let lineSegment = LineSegment(startPoint: CGPoint(x: leftAxisX, y: minBarY), endPoint: CGPoint(x: leftAxisX, y: maxBarY))
+        let lineSegment = LineSegment(startPoint: CGPoint(x: leftAxisX, y: 0), endPoint: CGPoint(x: leftAxisX, y: frame.height))
         mainLayer.addLineLayer(lineSegment: lineSegment, color: UIColor.gray.cgColor, width: leftAxisWidth, isDashed: false, animated: false, oldSegment: nil)
     }
 }
