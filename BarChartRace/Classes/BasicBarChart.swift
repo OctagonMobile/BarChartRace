@@ -198,18 +198,6 @@ public class BasicBarChart: UIView {
         }
     }
     
-    private func showHorizontalLines() {
-        self.layer.sublayers?.forEach({
-            if $0 is CAShapeLayer {
-                $0.removeFromSuperlayer()
-            }
-        })
-        let lines = presenter.computeHorizontalLines(viewHeight: self.frame.height)
-        lines.forEach { (line) in
-            mainLayer.addLineLayer(lineSegment: line.segment, color: #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).cgColor, width: line.width, isDashed: line.isDashed, animated: false, oldSegment: nil)
-        }
-    }
-    
     private func showLeftAxis() {
         let leftAxisX = maxLeftTextBarX - leftAxisWidth
         let lineSegment = LineSegment(startPoint: CGPoint(x: leftAxisX, y: minBarY), endPoint: CGPoint(x: leftAxisX, y: maxBarY))
