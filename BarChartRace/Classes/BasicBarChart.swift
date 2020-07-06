@@ -104,7 +104,31 @@ public class BasicBarChart: UIView {
     /// - Parameter animated: Animate Bar Chart Race. (true/false)
     public func setupBarChartRace(_ dataSets: [DataSet], animated: Bool) {
         self.animated = animated
-        self.dataSets = dataSets
+        self.dataSets = reArrangeDataSets(dataSets)
+    }
+    
+    private func reArrangeDataSets(_ dataSets: [DataSet]) -> [DataSet] {
+        //Sort Based on Date
+        var resultDataSets: [DataSet] = []
+        let dateSorted = dataSets.sorted {
+            return $0.date.compare($1.date) == .orderedAscending
+        }
+        
+        //Sort Each Date's Entries
+        var previousEntries: [DataEntry] = []
+        for index in 0..<dateSorted.count {
+            var current = dateSorted[index]
+            if index == 0 {
+                //Sort First set's entries Based on Value
+                current.dataEntries.sort(by: { $0.height > $1.height })
+            } else {
+                //Sort Other Entries based on Previous set's Entries
+                current.dataEntries = current.dataEntries.reorder(by: previousEntries.map { $0.title })
+            }
+            previousEntries = current.dataEntries
+            resultDataSets.append(current)
+        }
+        return resultDataSets
     }
 
     /// Plays the BarChart Race

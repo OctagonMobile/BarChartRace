@@ -1,152 +1,152 @@
 [
-  {
-    "date": "2020-01-01",
-    "entries": [
-      {
-        "title": "US",
-        "value": 100
-      },
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      }
-    ]
-  },
-  {
-    "date": "2020-01-02",
-    "entries": [
-      {
-        "title": "US",
-        "value": 90
-      },
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      }
-    ]
-  },
-  {
-    "date": "2020-01-03",
-    "entries": [
-      {
-        "title": "US",
-        "value": 55
-      },
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      }
-    ]
-  },
-  {
-    "date": "2020-01-04",
-    "entries": [
-      {
-        "title": "US",
-        "value": 35
-      },
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      }
-    ]
-  },
-  {
-    "date": "2020-01-05",
-    "entries": [
-      {
-        "title": "US",
-        "value": 90
-      },
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      }
-    ]
-  },
-  {
-    "date": "2020-01-05",
-    "entries": [
-      {
-        "title": "India",
-        "value": 99
-      },
-      {
-        "title": "UK",
-        "value": 60
-      },
-      {
-        "title": "France",
-        "value": 50
-      },
-      {
-        "title": "Germany",
-        "value": 30
-      },
-      {
-        "title": "Spain",
-        "value": 80
-      }
-    ]
-  }
+    {
+        "date": "2020-01-01",
+        "entries": [
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "US",
+                "value": 100
+            },
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "Germany",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "date": "2020-01-02",
+        "entries": [
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "US",
+                "value": 90
+            },
+            {
+                "title": "Germany",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "date": "2020-01-03",
+        "entries": [
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "US",
+                "value": 55
+            },
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "Germany",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "date": "2020-01-04",
+        "entries": [
+            {
+                "title": "US",
+                "value": 35
+            },
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "Germany",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "date": "2020-01-05",
+        "entries": [
+            {
+                "title": "US",
+                "value": 90
+            },
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "Germany",
+                "value": 30
+            }
+        ]
+    },
+    {
+        "date": "2020-01-05",
+        "entries": [
+            {
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "India",
+                "value": 99
+            },
+            {
+                "title": "France",
+                "value": 50
+            },
+            {
+                "title": "Italy",
+                "value": 30
+            },
+            {
+                "title": "Spain",
+                "value": 80
+            }
+        ]
+    }
 ]

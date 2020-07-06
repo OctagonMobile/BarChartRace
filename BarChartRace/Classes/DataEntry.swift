@@ -69,3 +69,8 @@ extension Formatter {
         return formatter
     }()
 }
+
+extension DataEntry: Reorderable {
+    typealias OrderElement = String
+    var orderElement: OrderElement { title }
+}

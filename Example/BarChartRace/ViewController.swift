@@ -53,7 +53,7 @@ class ViewController: UIViewController {
                     var entriesList: [DataEntry] = []
                     
                     let maxEntryValue = entries.sorted(by: { $0["value"] as! Float > $1["value"] as! Float}).first?["value"] as? Float ?? 0.0
-                    for (index, entry) in entries.enumerated() {
+                    for entry in entries {
                         let title = entry["title"] as? String ?? ""
                         let value = entry["value"] as? Float ?? 0.0
                         
