@@ -49,6 +49,8 @@ public class BasicBarChart: UIView {
     /// Responsible for compute all positions and frames of all elements represent on the bar chart
     private let presenter = BasicBarChartPresenter(barWidth: 40, space: 20)
     
+    //Includes Bar entries which are deleted from current Data Set
+    private var collectiveBarEntries: [BasicBarEntry] = []
     /// An array of bar entries. Each BasicBarEntry contain information about line segments, curved line segments, positions and frames of all elements on a bar.
     private var barEntries: [BasicBarEntry] = [] {
         didSet {
@@ -58,7 +60,7 @@ public class BasicBarChart: UIView {
             scrollView.isScrollEnabled = false
             mainLayer.frame = CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollView.contentSize.height)
                         
-            for (index, entry) in barEntries.enumerated() {
+            for (index, entry) in collectiveBarEntries.enumerated() {
                 showEntry(index: index, entry: entry, animated: animated, oldEntry: oldValue.safeValue(at: index))
             }
             
@@ -159,7 +161,9 @@ public class BasicBarChart: UIView {
     private func updateDataSet(_ dataSet: DataSet?, animated: Bool) {
         guard let dataSet = dataSet else { return }
         presenter.dataSet = dataSet
-        barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
+        let entries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
+        collectiveBarEntries = entries.0
+        barEntries = entries.1
     }
     
     private func updateChart() {
@@ -169,7 +173,9 @@ public class BasicBarChart: UIView {
         }
         let dataSet = dataSets[currentIndex]
         presenter.dataSet = dataSet
-        barEntries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
+        let entries = presenter.computeBarEntries(viewWidth: self.frame.width, viewHeight: self.frame.height)
+        collectiveBarEntries = entries.0
+        barEntries = entries.1
         delegate?.currentDataSet(dataSet, index: currentIndex)
     }
         
@@ -178,13 +184,16 @@ public class BasicBarChart: UIView {
         let cgColor = entry.data.color.cgColor
         
         // Show the main bar
-        mainLayer.addRectangleLayer(frame: entry.barFrame, color: cgColor, animated: animated, oldFrame: oldEntry?.barFrame)
+        let oldBarFrame = oldEntry?.barFrame ?? CGRect(origin: CGPoint(x: entry.barFrame.origin.x, y: bounds.height), size: entry.barFrame.size)
+        mainLayer.addRectangleLayer(frame: entry.barFrame, color: cgColor, animated: animated, oldFrame: oldBarFrame)
 
         // Show an Int value above the bar
-        mainLayer.addTextLayer(frame: entry.textValueFrame, color: self.titleColor?.cgColor ?? cgColor, font: entry.data.textValueFont, text: entry.data.textValue, animated: animated, oldFrame: oldEntry?.textValueFrame)
+        let oldValueFrame = oldEntry?.textValueFrame ?? CGRect(origin: CGPoint(x: entry.textValueFrame.origin.x, y: bounds.height), size: entry.textValueFrame.size)
+        mainLayer.addTextLayer(frame: entry.textValueFrame, color: self.titleColor?.cgColor ?? cgColor, font: entry.data.textValueFont, text: entry.data.textValue, animated: animated, oldFrame: oldValueFrame)
 
 //        // Show a title below the bar
-        mainLayer.addTextLayer(frame: entry.bottomTitleFrame, color: self.valueColor?.cgColor ?? cgColor, font: entry.data.titleValueFont, text: entry.data.title, animated: animated, oldFrame: oldEntry?.bottomTitleFrame)
+        let oldTitleFrame = oldEntry?.bottomTitleFrame ?? CGRect(origin: CGPoint(x: entry.bottomTitleFrame.origin.x, y: bounds.height), size: entry.bottomTitleFrame.size)
+        mainLayer.addTextLayer(frame: entry.bottomTitleFrame, color: self.valueColor?.cgColor ?? cgColor, font: entry.data.titleValueFont, text: entry.data.title, animated: animated, oldFrame: oldTitleFrame)
        
         
         maxLeftTextBarX = entry.barFrame.origin.x

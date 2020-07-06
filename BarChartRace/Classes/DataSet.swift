@@ -14,3 +14,14 @@ public struct DataSet {
         self.dataEntries = dataEntries
     }
 }
+
+
+extension DataSet {
+    public func minus(_ dataSet: DataSet) -> [DataEntry] {
+        var deletedEntries : [DataEntry] = []
+        deletedEntries = self.dataEntries.filter {
+            return !dataSet.dataEntries.contains($0)
+        }
+        return deletedEntries
+    }
+}

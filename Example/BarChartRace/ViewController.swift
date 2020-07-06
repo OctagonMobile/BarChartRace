@@ -16,7 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var barChart: BasicBarChart!
     
     var dataSets: [DataSet] =   []
-    
+    var colorsDict: [String: UIColor] = [:]
+    var currentColorIndex: Int = 0
     //MARK: Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +49,7 @@ class ViewController: UIViewController {
 
                     guard let date = dateString?.formattedDate("yyyy-MM-dd") else { continue }
                     
-                    let colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)]
+                    let colors = [#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1), #colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1), #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)]
                     var entriesList: [DataEntry] = []
                     
                     let maxEntryValue = entries.sorted(by: { $0["value"] as! Float > $1["value"] as! Float}).first?["value"] as? Float ?? 0.0
@@ -57,8 +58,12 @@ class ViewController: UIViewController {
                         let value = entry["value"] as? Float ?? 0.0
                         
                         let height: Float = maxEntryValue > 0 ? Float(value) / maxEntryValue : 0
-
-                        let dataEntry = DataEntry(color: colors[index % colors.count], height: height, textValue: "\(value)", title: title)
+                        
+                        if colorsDict[title] == nil {
+                            colorsDict[title] = colors[currentColorIndex % colors.count]
+                            currentColorIndex += 1
+                        }
+                        let dataEntry = DataEntry(color: colorsDict[title]!, height: height, textValue: "\(value)", title: title)
                         entriesList.append(dataEntry)
                     }
                     dataSets.append(DataSet(date, dataEntries: entriesList))

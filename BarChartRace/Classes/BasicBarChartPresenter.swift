@@ -23,8 +23,10 @@ class BasicBarChartPresenter {
     private let topSpace: CGFloat = 40.0
     
     var dataEntries: [DataEntry] = []
+    var previousDataSet: DataSet?
     var dataSet: DataSet? {
         didSet {
+            previousDataSet = oldValue
             dataEntries = dataSet?.dataEntries ?? []
         }
     }
@@ -39,7 +41,7 @@ class BasicBarChartPresenter {
     }
 
     
-    func computeBarEntries(viewWidth: CGFloat, viewHeight: CGFloat) -> [BasicBarEntry] {
+    func computeBarEntries(viewWidth: CGFloat, viewHeight: CGFloat) -> ([BasicBarEntry], [BasicBarEntry]) {
         space = 0.0
         let availableHeight = viewHeight - 2 * space
         var result: [BasicBarEntry] = []
@@ -79,8 +81,24 @@ class BasicBarChartPresenter {
                 space = 0.0
             }
         }
+        let barEntries = result
         
-        return result
+        if let previousDataSet = previousDataSet, let dataSet = dataSet {
+            let deletedEntries = previousDataSet.minus(dataSet)
+            for i in 0 ..< deletedEntries.count {
+                let entry = deletedEntries[i]
+                let entryHeight = CGFloat(entry.height) * totalBarWidth
+                let xPosition: CGFloat = computedTitleWidth + titlePadding /*Left and right padding for title*/
+                let yPosition = -computedBarHeight
+                let origin = CGPoint(x: xPosition, y: yPosition)
+                let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry, titleWidth: computedTitleWidth, valueWidth: computedValueWidth)
+                if let index = previousDataSet.dataEntries.firstIndex(of: entry) {
+                    result.insert(barEntry, at: index)
+                }
+            }
+        }
+        
+        return (result, barEntries)
     }
     
     func computeTitleWidth(forHeight height: CGFloat) -> CGFloat {
@@ -106,5 +124,4 @@ class BasicBarChartPresenter {
         }
         return maxWidth
     }
-    
 }

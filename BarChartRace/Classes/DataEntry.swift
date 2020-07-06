@@ -44,6 +44,12 @@ public struct DataEntry {
     }
 }
 
+extension DataEntry: Equatable {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        return lhs.title == rhs.title
+    }
+}
+
 extension Double {
     var isInteger: Bool {
         return floor(self) == self
