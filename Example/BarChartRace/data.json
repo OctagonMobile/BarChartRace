@@ -21,6 +21,26 @@
             {
                 "title": "Germany",
                 "value": 30
+            },
+            {
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     },
@@ -46,6 +66,26 @@
             {
                 "title": "Germany",
                 "value": 30
+            },
+            {
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     },
@@ -71,6 +111,26 @@
             {
                 "title": "Germany",
                 "value": 30
+            },
+            {
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     },
@@ -96,6 +156,26 @@
             {
                 "title": "Germany",
                 "value": 30
+            },
+            {
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     },
@@ -121,6 +201,26 @@
             {
                 "title": "Germany",
                 "value": 30
+            },
+            {
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     },
@@ -128,24 +228,44 @@
         "date": "2020-01-05",
         "entries": [
             {
-                "title": "UK",
-                "value": 60
+                "title": "US",
+                "value": 90
             },
             {
                 "title": "India",
                 "value": 99
             },
             {
-                "title": "France",
+                "title": "UK",
+                "value": 60
+            },
+            {
+                "title": "Iran",
                 "value": 50
             },
             {
-                "title": "Italy",
+                "title": "Germany",
                 "value": 30
             },
             {
-                "title": "Spain",
-                "value": 80
+                "title": "Russia",
+                "value": 40
+            },
+            {
+                "title": "China",
+                "value": 43
+            },
+            {
+                "title": "Norway",
+                "value": 77
+            },
+            {
+                "title": "Switzerland",
+                "value": 20
+            },
+            {
+                "title": "New Zealand",
+                "value": 10
             }
         ]
     }

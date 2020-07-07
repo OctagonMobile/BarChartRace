@@ -125,7 +125,6 @@ public class BasicBarChart: UIView {
                 //Sort Other Entries based on Previous set's Entries
                 current.dataEntries.sort(by: { $0.height > $1.height })
                 current.dataEntries = current.dataEntries.reorder(by: previousEntries.map { $0.title })
-                print(current.dataEntries.map {$0.title})
             }
             previousEntries = current.dataEntries
             resultDataSets.append(current)
