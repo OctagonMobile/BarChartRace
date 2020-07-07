@@ -89,7 +89,7 @@ class BasicBarChartPresenter {
                 let entry = deletedEntries[i]
                 let entryHeight = CGFloat(entry.height) * totalBarWidth
                 let xPosition: CGFloat = computedTitleWidth + titlePadding /*Left and right padding for title*/
-                let yPosition = -computedBarHeight
+                let yPosition = viewHeight
                 let origin = CGPoint(x: xPosition, y: yPosition)
                 let barEntry = BasicBarEntry(origin: origin, barWidth: entryHeight, barHeight: computedBarHeight, space:  computedBarHeight/2.0, data: entry, titleWidth: computedTitleWidth, valueWidth: computedValueWidth)
                 if let index = previousDataSet.dataEntries.firstIndex(of: entry) {
