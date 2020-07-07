@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BarChartRace'
-  s.version          = '1.2.1'
+  s.version          = '1.3.1'
   s.summary          = 'BarChartRace Animation'
 
 # This description is used to generate tags and improve search results.

@@ -4,43 +4,43 @@
         "entries": [
             {
                 "title": "UK",
-                "value": 60
+                "value": 10000
             },
             {
                 "title": "France",
-                "value": 50
+                "value": 9000
             },
             {
                 "title": "US",
-                "value": 100
+                "value": 8000
             },
             {
                 "title": "India",
-                "value": 99
+                "value": 7000
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6000
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5000
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 4000
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 3000
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 2000
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 1000
             }
         ]
     },
@@ -48,44 +48,44 @@
         "date": "2020-01-02",
         "entries": [
             {
-                "title": "India",
-                "value": 99
-            },
-            {
                 "title": "UK",
-                "value": 60
+                "value": 10500
             },
             {
                 "title": "France",
-                "value": 50
+                "value": 9500
             },
             {
                 "title": "US",
-                "value": 90
+                "value": 8000
+            },
+            {
+                "title": "India",
+                "value": 7500
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6700
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5500
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 4400
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 3900
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 2200
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 2500
             }
         ]
     },
@@ -94,43 +94,43 @@
         "entries": [
             {
                 "title": "UK",
-                "value": 60
+                "value": 10500
             },
             {
                 "title": "France",
-                "value": 50
+                "value": 10000
             },
             {
                 "title": "US",
-                "value": 55
+                "value": 8500
             },
             {
                 "title": "India",
-                "value": 99
+                "value": 8000
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6600
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5500
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 5000
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 4400
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 4000
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 4500
             }
         ]
     },
@@ -138,44 +138,44 @@
         "date": "2020-01-04",
         "entries": [
             {
-                "title": "US",
-                "value": 35
-            },
-            {
-                "title": "India",
-                "value": 99
-            },
-            {
                 "title": "UK",
-                "value": 60
+                "value": 10500
             },
             {
                 "title": "France",
-                "value": 50
+                "value": 10000
+            },
+            {
+                "title": "US",
+                "value": 8500
+            },
+            {
+                "title": "India",
+                "value": 8000
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6700
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5600
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 5000
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 4400
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 4000
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 4800
             }
         ]
     },
@@ -183,44 +183,44 @@
         "date": "2020-01-05",
         "entries": [
             {
-                "title": "US",
-                "value": 90
-            },
-            {
-                "title": "India",
-                "value": 99
-            },
-            {
                 "title": "UK",
-                "value": 60
+                "value": 10000
             },
             {
                 "title": "France",
-                "value": 50
+                "value": 9000
+            },
+            {
+                "title": "US",
+                "value": 8000
+            },
+            {
+                "title": "India",
+                "value": 7000
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6000
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5000
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 4000
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 3000
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 2000
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 6800
             }
         ]
     },
@@ -228,44 +228,89 @@
         "date": "2020-01-05",
         "entries": [
             {
+                "title": "UK",
+                "value": 10000
+            },
+            {
+                "title": "France",
+                "value": 9000
+            },
+            {
                 "title": "US",
-                "value": 90
+                "value": 8000
             },
             {
                 "title": "India",
-                "value": 99
-            },
-            {
-                "title": "UK",
-                "value": 60
-            },
-            {
-                "title": "Iran",
-                "value": 50
+                "value": 7000
             },
             {
                 "title": "Germany",
-                "value": 30
+                "value": 6000
             },
             {
                 "title": "Russia",
-                "value": 40
+                "value": 5000
             },
             {
                 "title": "China",
-                "value": 43
+                "value": 4000
             },
             {
                 "title": "Norway",
-                "value": 77
+                "value": 3000
             },
             {
                 "title": "Switzerland",
-                "value": 20
+                "value": 2000
             },
             {
                 "title": "New Zealand",
-                "value": 10
+                "value": 8500
+            }
+        ]
+    },
+    {
+        "date": "2020-01-06",
+        "entries": [
+            {
+                "title": "UK",
+                "value": 10000
+            },
+            {
+                "title": "France",
+                "value": 9000
+            },
+            {
+                "title": "US",
+                "value": 8000
+            },
+            {
+                "title": "India",
+                "value": 7000
+            },
+            {
+                "title": "Germany",
+                "value": 6000
+            },
+            {
+                "title": "Russia",
+                "value": 5000
+            },
+            {
+                "title": "China",
+                "value": 4000
+            },
+            {
+                "title": "Norway",
+                "value": 3000
+            },
+            {
+                "title": "Switzerland",
+                "value": 2000
+            },
+            {
+                "title": "New Zealand",
+                "value": 10200
             }
         ]
     }
