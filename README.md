@@ -10,6 +10,9 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+- iOS 13 or Above
+- Swift version 5.0
+- Xcode version 11.4 or above
 
 ## Installation
 
@@ -20,9 +23,13 @@ it, simply add the following line to your Podfile:
 pod 'BarChartRace'
 ```
 
+## Demo
+
+![](animation.gif)
+
 ## Author
 
-OctagonMobile, OctagonMobile
+OctagonMobile
 
 ## License
 
